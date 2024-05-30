@@ -5,10 +5,14 @@ description = ""
 authors = ["Scott Burns <scott@lentigo.net>"]
 readme = "README.md"
 packages = [{ include = "gspread_export", from = "src" }]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+click = "^8.1.7"
 
+[tool.poetry.scripts]
+gspread-export = "gspread_export.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
