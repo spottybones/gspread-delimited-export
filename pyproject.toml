@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gspread-delimited-export"
-version = "0.1.0"
+version = "0.2.1"
 description = "This package provides a script to export sheet from a Google Spreadsheet to a delimited file"
 authors = ["Scott Burns <scott@lentigo.net>"]
 readme = "README.md"
