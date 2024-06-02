@@ -46,7 +46,7 @@ def cli(credentials, key, worksheet, type, output):
 
     df = get_as_dataframe(ws, evaluate_formulas=True, dtype=str, dialect="excel")
     df.dropna(axis="index", how="all", inplace=True)
-    df.dropna(axis="columns", how="all", inplace=False)
+    df.dropna(axis="columns", how="all", inplace=True)
 
     # normalize column names
     df.columns = ["_".join(header.split()).lower() for header in list(df.columns)]
